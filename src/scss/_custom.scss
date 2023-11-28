@@ -1,0 +1,21 @@
+html, body {
+  height: 100%
+}
+
+body {
+  background-color: #201D27;
+}
+
+// temp
+.benefits,
+.gallery,
+.registration,
+.about {
+  height: 400px;
+  outline: 1px dashed #FFF8D6;
+  margin: 40px;
+
+  h2 {
+    text-align: center;
+  }
+}

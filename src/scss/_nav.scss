@@ -1,0 +1,23 @@
+.navbar {
+  --bs-navbar-padding-y: 0;
+  --bs-navbar-brand-padding-y: 23px;
+  --bs-navbar-brand-margin-end: 0;
+  --bs-navbar-nav-link-padding-x: 20px;
+
+  background-color: #000;
+
+  @include media-breakpoint-up(xl) {
+    padding: 9px 0;
+  }
+}
+
+.navbar-nav {
+  --bs-nav-link-color: #fff;
+  --bs-nav-link-hover-color: #fff;
+
+  display: none;
+
+  @include media-breakpoint-up(xl) {
+    display: flex;
+  }
+}

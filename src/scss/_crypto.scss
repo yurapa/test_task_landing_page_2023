@@ -1,0 +1,41 @@
+.crypto {
+  display: flex;
+  flex-direction: column;
+  width: 14.75rem;
+  height: 9rem;
+  color: #fff;
+  background-color: rgba(140, 140, 140, 0.10);
+  border: 1px solid rgba(167, 167, 167, 0.20);
+  border-radius: 0.81694rem;
+  padding: 13px;
+  margin: 13px 0.55rem;
+
+  @include media-breakpoint-up(md) {
+    width: 13rem;
+    height: 8rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 12.6875rem;
+    height: 9.375rem;
+  }
+
+  &-price {
+    font-size: 19.078px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 8px 0;
+  }
+
+  &-percent {
+    font-size: 13.355px;
+    font-weight: 400;
+  }
+
+  &-price,
+  &-percent {
+    text-shadow: 0 0 65.81953430175781px #FFC255;
+    line-height: 120%;
+  }
+}
+
