@@ -7,12 +7,10 @@ body {
 }
 
 // temp
-.benefits,
-.gallery,
 .registration,
 .about {
-  height: 400px;
-  outline: 1px dashed #FFF8D6;
+  min-height: 200px;
+  outline: 1px dashed rgba(254, 254, 254, 0.18);
   margin: 40px;
 
   h2 {

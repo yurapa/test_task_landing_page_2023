@@ -20,6 +20,15 @@
     height: 9.375rem;
   }
 
+  &-name {
+    display: flex;
+    align-items: center;
+  }
+
+  &-symbol {
+    margin: 0 10px;
+  }
+
   &-price {
     font-size: 19.078px;
     font-style: normal;

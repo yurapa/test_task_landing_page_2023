@@ -16,7 +16,11 @@ $badge-padding-y: 0.33em;
 $breadcrumb-divider: "|";
 $breadcrumb-divider-color: #888;
 
+$btn-color: red;
+$btn-font-size: 1.5rem;
+$btn-font-weight: 700;
 $btn-border-radius: 0;
+$btn-border-width: 0;
 
 $hr-opacity: 0.15;
 $hr-margin-y: 0.5rem;
@@ -52,6 +56,8 @@ $hr-margin-y: 0.5rem;
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
+@import "./benefit";
+@import "./gallery";
 @import "./crypto";
 @import "./nav";
 @import "./footer";

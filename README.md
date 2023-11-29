@@ -1,6 +1,7 @@
 Roboto, 400 = Nav link
 Roboto, 500
-
+Roboto, 700
+Roboto, 800
 
 
 - Use the figma file as a guideline to slice and code the page as close as possible to the
@@ -12,11 +13,11 @@ https://jigsaw.w3.org/css-validator/
 ● You should use BEM or any other markup methodology when possible
 ● You should use custom CSS or any CSS library in your code
 ● You can use custom JS or any JS framework/library (Angular, Vue, React)
-● Wherever icons are not provided in the assets, fontawesome library should be used
+ - Wherever icons are not provided in the assets, fontawesome library should be used
 ● Server validation should be a visual simulation/representation
-● Deliverable should be a Github repository link with all the files
-● Live version is required. You can use any free hosting service like https://byet.host/
-● You should not use jQuery library
+ - Deliverable should be a Github repository link with all the files
+ - Live version is required. You can use any free hosting service like https://byet.host/
+ - You should not use jQuery library
 
 Guidelines:
 
