@@ -1,4 +1,4 @@
-let currentStep = 3;
+let currentStep = 1;
 
 document.addEventListener('DOMContentLoaded', () => {
     // Display the first step on initial load
