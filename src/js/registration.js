@@ -179,53 +179,20 @@ function updateStep2() {
     step2progress.querySelector('.progress-bar').style.width = isValidStep2 ? "50%" : "0";
 }
 
+// HOTFIX: Vite - production global
+window.validateFullName = validateFullName;
+window.validateDateOfBirth = validateDateOfBirth;
+window.validateEmail = validateEmail;
+window.validatePassword = validatePassword;
 
-(() => {
-    'use strict'
+window.updateStep1 = updateStep1;
+window.updateStep2 = updateStep2;
 
-    // const regForm = document.getElementById('registrationForm');
-    //
-    // if (regForm.classList.contains('needs-validation')) {
-    //     regForm.checkValidity();
-
-        // console.log(regForm.classList.contains('needs-validation'))
-        // regForm.addEventListener('submit', event => {
-        //
-        // }, false)
-        // }
-    // }
-
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    // const forms = document.querySelectorAll('.needs-validation')
-
-    // Loop over them and prevent submission
-    // Array.from(forms).forEach(form => {
-    //     form.addEventListener('submit', event => {
-    //         if (!form.checkValidity()) {
-    //             event.preventDefault()
-    //             event.stopPropagation()
-    //         }
-    //
-    //         form.classList.add('was-validated')
-    //     }, false)
-    // })
-})();
+window.nextStep = nextStep;
+window.showStep = showStep;
 
 document.getElementById('registrationForm').addEventListener('submit', (event) => {
     event.preventDefault();
-
-    // const regForm = document.getElementById('registrationForm');
-
-    // regForm.checkValidity();
-    // console.log("    regForm.checkValidity(); ", regForm.checkValidity() )
-    // if (regForm.classList.contains('needs-validation')) {
-
-    // console.log(regForm.classList.contains('needs-validation'))
-    // regForm.addEventListener('submit', event => {
-    //
-    // }, false)
-    // }
-    // }
 
     if (validateFullName(true) && validateDateOfBirth(true) && validateEmail(true) && validatePassword(true)) {
         nextStep();
