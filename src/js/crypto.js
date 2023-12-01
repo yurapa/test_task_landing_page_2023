@@ -15,7 +15,7 @@ fetch('https://api.coinlore.net/api/ticker/?id=90,80,58,1,2321')
             data1 +=`
                 <div class="crypto">
                     <div class="crypto-name">
-                        <img src="../img/${item.symbol.toLowerCase()}.svg" width="34" height="34" alt=${item.name} />
+                        <img src="../crypto/${item.symbol.toLowerCase()}.svg" width="34" height="34" alt=${item.name} />
                         <span class="crypto-symbol">${item.symbol}</span>
                         <span class="badge text-bg-warning text-uppercase">${item.name}</span>
                     </div>
