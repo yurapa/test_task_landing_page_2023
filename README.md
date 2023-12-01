@@ -24,20 +24,21 @@ Guidelines:
 - Use the open source api for crypto widgets, https://api.coinlore.net/api/tickers/
 - Client validation rules
 -- Full Name - No numbers or special characters allowed
-○ Date of Birth
-■ Format dd/mm/yy
-■ Date of birth must be at least
-● Minimum of 18 years old
-● Maximum of 60 years old
+ - Date of Birth
+1) Format dd/mm/yy (is it possible without workaround?)
+2) Date of birth must be at least
+- Minimum of 18 years old
+- Maximum of 60 years old
 
 ○ Password:
-■ 8 - 15 characters
-■ 1 or more numbers
-■ 1 or more lower case letters
-■ 1 or more upper case letters
-■ 1 or more special characters (#[]()@$&*!?|,.^/\+_-)
+- 8 - 15 characters
+- 1 or more numbers
+- 1 or more lower case letters
+- 1 or more upper case letters
+- 1 or more special characters (#[]()@$&*!?|,.^/\+_-)
+
 ○ Email – Valid Email Format
  -  Server validation rules (simulation)
-   1. Registration button activation after client validation pass
-   2.  Success message on submit (register now)
+   1. Registration button activation after client validation pass 
+   2. Success message on submit (register now)
  -  Fonts should be taken from Google fonts (Bebas Neue, Roboto)

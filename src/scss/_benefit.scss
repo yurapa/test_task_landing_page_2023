@@ -1,3 +1,27 @@
+.section-benefits {
+  margin: 70px 0;
+
+  @include media-breakpoint-up(xl) {
+    margin: 80px 0;
+  }
+
+  .title {
+    position: relative;
+    margin-bottom: 50px;
+
+    &::after {
+      content: '';
+      width: 50px;
+      height: 1px;
+      position: absolute;
+      left: 50%;
+      bottom: -25px;
+      transform: translateX(-50%);
+      background-color: $success;
+    }
+  }
+}
+
 .benefits {
   display: grid;
   grid-template-rows: repeat(4, 1fr);

@@ -2,18 +2,14 @@ html, body {
   height: 100%
 }
 
-body {
-  background-color: #201D27;
+input[type=date]:invalid::-webkit-datetime-edit {
+  color: #b1b1b1;
 }
 
-// temp
-.registration,
-.about {
-  min-height: 200px;
-  outline: 1px dashed rgba(254, 254, 254, 0.18);
-  margin: 40px;
-
-  h2 {
-    text-align: center;
+.feedback > div,
+.invalid-feedback {
+  &::before {
+    content: "o";
+    margin-right: 7px;
   }
 }

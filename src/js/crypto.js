@@ -10,6 +10,8 @@ fetch('https://api.coinlore.net/api/ticker/?id=90,80,58,1,2321')
         let data1="";
 
         data.map((item)=> {
+            const isRaise = parseFloat(item.percent_change_24h) < 0;
+
             data1 +=`
                 <div class="crypto">
                     <div class="crypto-name">
@@ -19,7 +21,7 @@ fetch('https://api.coinlore.net/api/ticker/?id=90,80,58,1,2321')
                     </div>
                     <hr />
                     <div class="crypto-price">$${item.price_usd}</div>
-                    <div class="crypto-percent ${ parseFloat(item.percent_change_24h) < 0 ? 'text-danger' : 'text-success' }">${Math.abs(item.percent_change_24h)}%</div>
+                    <div class="crypto-percent ${ isRaise ? 'text-danger' : 'text-success' }">${ isRaise ? '&#5121;' : '&#5123;' } ${Math.abs(item.percent_change_24h)}%</div>
                 </div>
             `;
         });

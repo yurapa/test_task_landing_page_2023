@@ -1,0 +1,22 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/bg-hero-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 83px 0;
+
+  @include media-breakpoint-up(md) {
+    aspect-ratio: 20 / 11;
+    background-size: cover;
+    background-image: url("../img/bg-hero-tablet.png");
+    padding: 100px 0;
+  }
+
+  @include media-breakpoint-up(xl) {
+    aspect-ratio: 7 / 3;
+    background-image: url("../img/bg-hero-desktop.png");
+    padding: 128px 0;
+  }
+}

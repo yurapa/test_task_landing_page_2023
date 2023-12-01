@@ -1,0 +1,32 @@
+.btn {
+  width: 100%;
+  max-width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Bebas Neue', sans-serif;
+  line-height: 40px;
+  text-decoration: none;
+  border: 0;
+  background: $success;
+  transition: background 300ms cubic-bezier(0.25, 0.1, 0.25, 1), opacity 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  padding: 0 10px;
+
+  @include media-breakpoint-up(md) {
+    width: auto;
+    min-width: 345px;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:disabled {
+    cursor: default;
+    background: #ccc;
+  }
+}
