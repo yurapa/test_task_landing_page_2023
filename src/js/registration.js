@@ -28,7 +28,7 @@ function validateFullName(silentMode) {
 
     const fullName = document.getElementById('fullName');
     const fullNameError = fullName.nextElementSibling;
-    const fullNameRegExp = /^[A-Za-z\s]+$/;
+    const fullNameRegExp = new RegExp(/^[A-Za-z\s]+$/);
 
     const isValid = fullNameRegExp.test(fullName.value.trim());
 
@@ -135,8 +135,7 @@ function validatePassword(silentMode) {
 function validateEmail(silentMode) {
     const email = document.getElementById('email');
     const emailError = email.nextElementSibling;
-    const emailRegExp =
-        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const emailRegExp = new RegExp(/^([a-zA-Z0-9\+_\-]+)(\.[a-zA-Z0-9\+_\-]+)*@(?![\-])([a-zA-Z0-9\-]+\.)+[a-zA-Z]{2,12}$/);
 
     const isValid = emailRegExp.test(email.value.trim());
 
