@@ -2,6 +2,9 @@
 @import "../../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
+$enable-dark-mode: false;
+$enable-rfs: false;
+
 $body-bg: #201D27;
 $body-color: #fff;
 $yellow: #FFF8D6;
@@ -45,6 +48,16 @@ $input-font-size: 14px;
 @import "../../node_modules/bootstrap/scss/variables-dark";
 
 // 4. Include any default map overrides here
+$grid-breakpoints: (
+    xs: 0,
+    md: 768px,
+    xl: 1200px,
+);
+
+$container-max-widths: (
+    md: 720px,
+    xl: 1140px,
+);
 
 // 5. Include remainder of required parts
 @import "../../node_modules/bootstrap/scss/maps";
