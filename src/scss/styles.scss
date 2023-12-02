@@ -4,6 +4,7 @@
 // 2. Include any default variable overrides here
 $enable-dark-mode: false;
 $enable-rfs: false;
+$enable-validation-icons: false;
 
 $body-bg: #201D27;
 $body-color: #fff;
@@ -89,9 +90,10 @@ $container-max-widths: (
 // 8. Add additional custom code here
 @import "./benefit";
 @import "./btn";
-@import "./hero";
-@import "./gallery";
 @import "./crypto";
+@import "./feature";
+@import "./gallery";
+@import "./hero";
 @import "./nav";
 @import "./footer";
 @import "./registration";
