@@ -11,16 +11,8 @@ function showStep(step) {
 }
 
 function nextStep() {
-    // Validate current step before proceeding to the next step (you can add your validation logic here)
-
-    // Move to the next step
     currentStep++;
     showStep(currentStep);
-
-    // Display "Registration Successful" message after step 2
-    if (currentStep === 3) {
-        document.querySelector('.nextButton').style.display = 'none'; // Hide the button
-    }
 }
 
 function validateFullName(silentMode) {
@@ -82,7 +74,7 @@ function validatePassword(silentMode) {
     const passwordEl = document.getElementById('password');
     const password = passwordEl.value.trim();
     const passwordFeedback = passwordEl.nextElementSibling;
-    const specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+    const specialChars = new RegExp(/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/);
 
     const hintConfig = {
         length: null,
